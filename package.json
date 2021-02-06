@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "react": "15.6.1",
     "react-addons-shallow-compare": "^15.6.0",
     "react-datepicker": "^0.40.0",
+    "react-dates": "^12.7.0",
     "react-dom": "15.6.1",
     "react-modal": "2.2.2",
     "react-redux": "^5.0.5",
