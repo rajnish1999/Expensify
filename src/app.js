@@ -8,11 +8,9 @@ import {setTextFilter, sortByAmount, sortByDate, setStartDate, setEndDate} from 
 import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
+import './firebase/firebase';
 
 const store = configureStore();
-
-const expenseOne = store.dispatch(addExpense({ description: 'water bill', amount: 100, createdAt: 11200}));
-const expenseTwo = store.dispatch(addExpense({ description: 'gas bill', amount: 500, createdAt: 2000}));
 
 const jsx = (
     <Provider store = {store}>
