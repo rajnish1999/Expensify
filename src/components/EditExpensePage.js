@@ -10,7 +10,8 @@ const editExpensePage = (props) => {
                 expense={props.expense}
                 onSubmitFunc={(expense) => {
                     props.dispatch(startEditExpense(props.match.params.id, expense));
-                    props.history.push('/');
+                    props.history.push('/dashboard');
+                    // props.history.go(0);
                 }}
             />
             <button id={props.expense.id} onClick={(e) => {
