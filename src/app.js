@@ -9,6 +9,7 @@ import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import {firebase} from './firebase/firebase';
+import LoadingPage from './components/LoadingPage';
 
 const store = configureStore();
 
@@ -18,7 +19,7 @@ const jsx = (
     </Provider>
 )
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
+ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 let hasRendered = false;
 const renderApp = () => {
@@ -43,5 +44,6 @@ firebase.auth().onAuthStateChanged((user) => {
         history.push('/')
     }
 })
+
 
 

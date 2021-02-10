@@ -1,6 +1,13 @@
-@import './base/settings';// settings contains global variables that is needed in every page
-@import './base/base'; //base basically contains partials(content that is needed in every page)
-
-//components folder in styling contains all those styling that are needed in respective pages
-
-//finally style.scss contains the import from all the scss file, it is final styling file
+@import './base/settings';
+@import './base/base';
+@import './components/box-layout';
+@import './components/button';
+@import './components/header';
+@import './components/content-container';
+@import './components/page-header';
+@import './components/input-group';
+@import './components/inputs';
+@import './components/form';
+@import './components/visibility';
+@import './components/list';
+@import './components/loader';
